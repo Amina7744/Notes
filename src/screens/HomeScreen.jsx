@@ -48,8 +48,6 @@ export default function HomeScreen({ navigation }) {
       note.description.toLowerCase().includes(searchText.toLowerCase());
 
     return matchesFilter && matchesSearch;
-    //return matchesSearch?matchesSearch:matchesFilter (Cela va renvoyer le meme resultat)
-    //return matchesFilter || matchesSearch; (Seulement l'une des deux condition doit etre rendu et l'autre sera à null)
   });
 
   const FilterButton = ({ title, value }) => (
