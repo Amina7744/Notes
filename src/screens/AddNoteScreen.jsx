@@ -194,4 +194,4 @@ const styles = StyleSheet.create({
     color: '#666',
     marginBottom: 16,
   },
-});
+ });

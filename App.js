@@ -4,6 +4,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import NoteDetailScreen from './src/screens/NoteDetailScreen';
 import AddNoteScreen from './src/screens/AddNoteScreen';
 import HomeScreen from './src/screens/HomeScreen';
+import MapLocationScreen from './src/screens/MapLocationScreen';
+
 
 const Stack = createStackNavigator();
 
@@ -43,7 +45,15 @@ export default function App() {
               title: "Details sur les notes"
             }}
           />
+           <Stack.Screen
+          name="MapLocation"
+          component={MapLocationScreen}
+          options={{
+            title: "Localisation"
+          }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
-   );
- }
+    
+  );
+}
